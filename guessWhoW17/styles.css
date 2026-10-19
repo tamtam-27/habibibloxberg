@@ -1,0 +1,169 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    margin-inline: 1.5%;
+}
+
+li {
+    cursor: pointer;
+    width: max-content;
+    text-align: center;
+    margin-top: 8%;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+#screen {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    border: dotted;
+    border-width: 5px;
+    border-color: olivedrab;
+    width: 100%;
+}
+
+.head_regel {
+    text-align: center;
+}
+
+.par_regel {
+    margin: 2%;
+    font-size: 16px;
+}
+
+.div_regel {
+    position: fixed;
+    background-color: antiquewhite;
+    border: 5px solid darkolivegreen;
+    text-align: center;
+    z-index: 1000;
+    height: 90%;
+    width: 90%;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div_list {
+    position: fixed;
+    background-color: antiquewhite;
+    border: 5px solid darkolivegreen;
+    text-align: center;
+    z-index: 1000;
+    border-width: 5px;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+}
+
+.div_buttons {
+    background-color: #E1D3C1;
+    margin: 2%;
+    height: 69px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.button_regel,
+.button_list,
+.button_reset {
+    background-color: olivedrab;
+    cursor: pointer;
+    height: 60%;
+    width: 70%;
+    margin: auto;
+    font-size: 16px;
+    color: black;
+    border: 2px solid darkolivegreen;
+}
+
+.button_list_randomChar {
+    background-color: #E2725B;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    border: 2px solid darkolivegreen;
+    z-index: 1001;
+}
+
+.button_zurück {
+    background-color: #BDB76B;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    border: 2px solid darkolivegreen;
+    margin-bottom: 3%;
+}
+
+.black_overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .80;
+    z-index: 999;
+}
+
+.hidden {
+    display: none;
+}
+
+.black_filter {
+    filter: brightness(20%);
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+}
+
+.list_column {
+    text-align: center;
+    flex: 1;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_header {
+    margin-bottom: -8%;
+}
+
+.dynlisti,
+.dynlistu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+[id^="pic_"] {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin: 0 auto;
+}
