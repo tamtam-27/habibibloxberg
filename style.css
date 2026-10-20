@@ -1,7 +1,31 @@
-.testDiv {
-    background-color: lightblue;
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    margin-inline: 1.5%;
 }
 
-#testId {
-    background-color: lightgreen;
+button {
+    background-color: olivedrab;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    border: 2px solid darkolivegreen;
+}
+
+#gamesContainer,
+#bdayContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.hub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
 }

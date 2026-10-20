@@ -9,18 +9,21 @@
 
 <body class="main">
 
-    <div class="testDiv">
-        <p>
-            paragraph, to see if this works or not
-        </p>
-    </div>
+    <div class="hub">
+        Birthday apps:
+        <div id="bdayContainer">
+            <button onclick="reroute('SB')">Bday SB</button>
+            <button onclick="reroute('AG')">Bday AG</button>
+            <button onclick="reroute('JM')">Bday JM</button>
+            <button onclick="reroute('AN')">Bday AN</button>
+        </div>
 
-    <div id="testId">
-        <button onclick="guessWho()">W17 Guess Who</button>
-        <button onclick="linkBday('SB')">Bday SB</button>
-        <button onclick="linkBday('AG')">Bday AG</button>
-        <button onclick="linkBday('JM')">Bday JM</button>
-        <button onclick="linkBday('AN')">Bday AN</button>
+        Games
+        <div id="gamesContainer">
+            <button onclick="reroute('W17')">Guess Who - W17</button>
+            <button onclick="reroute('acti')">Activity</button>
+        </div>
+
     </div>
 
     <script src="script.js"></script>

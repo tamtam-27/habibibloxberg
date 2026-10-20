@@ -120,4 +120,8 @@ function loadMedia() {
     });
 };
 
+function hub() {
+    window.location.href = `../index.html`;
+}
+
 window.onload = loadMedia;
